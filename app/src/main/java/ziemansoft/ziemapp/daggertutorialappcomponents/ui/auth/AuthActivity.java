@@ -33,7 +33,7 @@ public class AuthActivity extends DaggerAppCompatActivity{
         setContentView(R.layout.activity_auth);
         init();
         picasso.load(R.drawable.icon_user).into(imageView);
-//        AuthViewModel authViewModel = new ViewModelProvider(this, viewModelProvidersFactory).get(AuthViewModel.class);
+        AuthViewModel authViewModel = new ViewModelProvider(this, viewModelProvidersFactory).get(AuthViewModel.class);
     }
 
     private void init(){
